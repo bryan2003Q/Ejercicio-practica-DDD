@@ -55,7 +55,7 @@ public class LibraryService {
         BookDTO dto = new BookDTO();
         dto.id = book.getId();
         dto.title = book.getTitle();
-        dto.author = book.Author();
+        dto.author = book.getAuthor();
         dto.status = book.getStatus();
         dto.rentedByUserId = book.getRentedByUserId();
         return dto;
