@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//ejemplo de commit 
 @Service
 public class LibraryService {
 
@@ -17,7 +18,8 @@ public class LibraryService {
     private final UserRepository userRepository; // Interface de dominio de usuarios
     private final ApplicationEventPublisher eventPublisher;
 
-    public LibraryService(BookRepository bookRepository, UserRepository userRepository, ApplicationEventPublisher eventPublisher) {
+    public LibraryService(BookRepository bookRepository, UserRepository userRepository,
+            ApplicationEventPublisher eventPublisher) {
         this.bookRepository = bookRepository;
         this.userRepository = userRepository;
         this.eventPublisher = eventPublisher;
